@@ -1,0 +1,89 @@
+// Variables
+$main-color: #277e98;
+$secondary-color: #ddd;
+// Variables
+/* Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: black;
+}
+ul {
+  list-style-type: none;
+}
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Small devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .container {
+    width: 720px;
+  }
+}
+// Medium devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+  }
+}
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Global Rules */
+/* Start Header */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+header .container .logo img {
+  width: 300px;
+  height: 120px;
+}
+header .container::before {
+content: "";
+  background-color: white;
+  width: calc(100% - 40px);
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+header .container nav ul {
+  display: flex;
+  flex-direction: column wrap;
+  align-items: center;
+}
+header .container nav ul li {
+  margin-left: 15px;
+  color: white;
+}
+/* End Header */
